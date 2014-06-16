@@ -17,5 +17,5 @@ VISAT-BEAM configuration module
 beamHome           = '/home/jobel/beam-5.0/'
 beamBinDir         = beamHome + 'bin/'
 gptProcessor       = beamBinDir + 'gpt.sh'
-#pconvertProcessor = beamBinDir + 'pconvert.sh'
+pconvertProcessor = beamBinDir + 'pconvert.sh'
 ###############################
