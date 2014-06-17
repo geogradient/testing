@@ -51,6 +51,20 @@ for merisFile in srcList:
         b[2] = yellow_subs
         b[3] = total_susp
          ...
+    MEGS b[35] = suspended_particle_matter
+         b[37] = chlorophyll_2
+         33 = yellow_substance
+         60 = nnboa_chl2
+         61 = nnboa_spm
+         
+         16 = reflectance_01
+         28 = reflectance_14
+         231 = c2r_chi_sum_wat
+         241 = c2r_RLw_01
+         249 = c2r_RLw_09
+         250 = c2r_RLw_a_01
+         258 = c2r_RLw_a_09
+         
     '''    
     ExCommand = beam.pconvertProcessor + " -m equalize -n 0,0,0,255 -f png -b 1 " + merisFile + " -o " + destDir 
     print(ExCommand+'\\')    
