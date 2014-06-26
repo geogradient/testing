@@ -1,0 +1,8 @@
+<parameters>
+    <targetProductType>COLLOCATED</targetProductType>
+    <renameMasterComponents>true</renameMasterComponents>
+    <renameSlaveComponents>true</renameSlaveComponents>
+    <masterComponentPattern>nameID</masterComponentPattern>
+    <slaveComponentPattern>${ORIGINAL_NAME}</slaveComponentPattern>
+    <resamplingType>NEAREST_NEIGHBOUR</resamplingType>
+</parameters>
