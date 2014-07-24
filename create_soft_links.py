@@ -6,7 +6,7 @@ Last update: 2014-06-17 Version: 1.0
 
 """
 import os
-#from os.path import exists
+
 
 destDir = '/home/jobel/testing/softlinks/'
 srcDir  = '/media/jobel/SeagateDrive/eodata2014/level2/MEGS/' 

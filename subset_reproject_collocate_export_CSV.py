@@ -10,7 +10,7 @@ MEGS8.1 (ODESA1.2.4) MERIS FR datasets.
 """
 
 """The module gpt_config has the configuration paths for using the 
-BEAM gpt processor (v5.0) localy."""
+BEAM gpt processor (v5.0) locally."""
 
 
 import os
@@ -92,9 +92,9 @@ def gpt_graph(outputfilename):
     requestSkeleton +=  '       </sources>\n'
     requestSkeleton +=  '       <parameters>\n'
     requestSkeleton +=  '           <file>'+ outputfilename +'</file>\n'
-    requestSkeleton +=  '           <formatName>CSV</formatName>\n'
+    #requestSkeleton +=  '           <formatName>CSV</formatName>\n'
     #requestSkeleton +=  '           <formatName>beam-dimap</formatName>\n'
-    #requestSkeleton +=  '           <formatName>NetCDF-BEAM</formatName>\n'
+    requestSkeleton +=  '           <formatName>NetCDF-BEAM</formatName>\n'
     requestSkeleton +=  '       </parameters>\n'
     requestSkeleton +=  '   </node>\n'        
     requestSkeleton +=  '</graph>\n'
@@ -105,6 +105,8 @@ def gpt_graph(outputfilename):
 ##########
     
 destDir = '/home/jobel/testing/collocate_cvs/MEGS/'
+destDir = '/home/jobel/testing/collocate_NetCDF_beam'
+
 #srcDir  = '/media/jobel/SeagateDrive/eodata2014/level2/FUB/' # gpt_configuration.srcDirs['CCL1P_out']
 srcDir  = '/media/jobel/SeagateDrive/eodata2014/level2/MEGS/'
 
